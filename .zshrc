@@ -161,3 +161,6 @@ _fzf_comprun() {
 
 # ---- Bat (better cat) ----
 export BAT_THEME="Catppuccin Mocha"
+
+# thefuck alias
+eval $(thefuck --alias)
