@@ -140,3 +140,8 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --typed=d --hidden --exclude .git . "$1"
 }
+
+source ~/GitHub/fzf-git.sh/fzf-git.sh
+
+# ---- Bat (better cat) ----
+export BAT_THEME="Catppuccin Mocha"
