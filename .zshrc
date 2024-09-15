@@ -166,4 +166,5 @@ export BAT_THEME="Catppuccin Mocha"
 eval $(thefuck --alias)
 
 # ---- Zoxide (better cd) -----
-eval $(zoxide init zsh)
+eval "$(zoxide init zsh)"
+alias cd="z"
