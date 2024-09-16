@@ -122,7 +122,7 @@ eval "$(fzf --zsh)"
 
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --typed=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
 #  - The first argument to hte function ($1) is the base path to start traversal
@@ -134,7 +134,7 @@ _fzf_compgen_path() {
 
 # Use fd to generate the list of directoriy completion
 _fzf_compgen_dir() {
-  fd --typed=d --hidden --exclude .git . "$1"
+  fd --type=d --hidden --exclude .git . "$1"
 }
 
 source ~/GitHub/fzf-git.sh/fzf-git.sh
