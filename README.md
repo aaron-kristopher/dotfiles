@@ -1,0 +1,2 @@
+# dotfiles
+Serendipity's dotfiles
